@@ -1406,4 +1406,5 @@ if __name__ == '__main__':
     
     print("="*70)
     
-    app.run(host='0.0.0.0', port=7789, debug=True, threaded=True)
+    port = int(os.environ.get('PORT', 7789))
+app.run(host='0.0.0.0', port=port)

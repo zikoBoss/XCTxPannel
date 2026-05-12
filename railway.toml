@@ -1,0 +1,5 @@
+[build]
+  builder = "nixpacks"   # أو "railway/bun" لكن الأفضل nixpacks لـ Python
+
+[deploy]
+  startCommand = "python app.py"
